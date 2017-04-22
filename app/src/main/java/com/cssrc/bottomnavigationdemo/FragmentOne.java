@@ -57,7 +57,8 @@ public class FragmentOne extends Fragment implements SwipeRefreshLayout.OnRefres
 
     private void initView(){
         mainAdapter = new MainAdapter(this.getContext(), itemList);
-        LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(this.getContext(), LinearLayoutManager.VERTICAL, false);
+        LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(
+                this.getContext(), LinearLayoutManager.VERTICAL, false);
         recycler.setLayoutManager(mLinearLayoutManager);
         recycler.setAdapter(mainAdapter);
         mRefreshLayout.setOnRefreshListener(this);
