@@ -11,4 +11,11 @@
 
     </style>
 
+    <!--自定义布局属性-->
+    <!--name是声明的属性名，最好和自定义View的名称一致-->
+    <declare-styleable name="MyView">
+        <!--声明我们的属性，取值类型是 尺寸类型dp,px-->
+        <attr name="default_size" format="dimension"/>
+    </declare-styleable>
+
 </resources>
